@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="apple-touch-icon" href="assets/touch-icon-114.png" />
+		<link rel="apple-touch-icon" href="assets/touch-icon-72.png" />
+		<link rel="apple-touch-icon" href="assets/touch-icon-57.png" />
+		<title>CSS3 Shapes</title> 
+		<link rel="stylesheet" href="jqm/jquery.mobile-1.0a4.1.min.css" />
+		<script src="jqm/jquery-1.5.2.min.js"></script>
+		<script src="jqm/jquery.mobile-1.0a4.1.min.js"></script>
+	</head>
+	<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+		<section data-role="page" id="shapes" data-title="Shapes">
+			<header data-role="header">
+				<h1>CSS3 Shapes</h1>
+			</header>
+			<article data-role="content">
+				<ul data-role="listview" data-filter="true">
+					<li><a href="#circle">Circle</a></li>
+					<li><a href="#oval">Oval</a></li>
+					<li><a href="#square">Square</a></li>
+					<li><a href="#rectangle">Rectangle</a></li>
+					<li><a href="#triangle">Triangle</a></li>
+					<li><a href="#star">Star</a></li>
+					<li><a href="#pentagon">Pentagon</a></li>
+					<li><a href="#heart">Heart</a></li>
+					<li><a href="#infinity">Infinity</a></li>
+				</ul>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="circle" data-title="Circle">
+			<header data-role="header">
+				<h1>Circle</h1>
+			</header>
+			<article data-role="content">
+				<div class="circle"></div>
+				<style>
+					.circle {
+						width: 100px;
+						height: 100px;
+						background: #fc2e5a;
+						-moz-border-radius: 50px;
+						-webkit-border-radius: 50px;
+						border-radius: 50px;
+					}
+				</style>
+				<p><a href="#circle_css" data-transition="pop">Circle CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="circle_css" data-title="Circle">
+			<header data-role="header">
+				<h1>Circle</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.circle {
+	width: 100px;
+	height: 100px;
+	background: #fc2e5a;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+					</code>
+				</pre>
+				<p><a href="#circle" data-transition="pop" data-direction="reverse" data-rel="back">Circle Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="oval" data-title="Oval">
+			<header data-role="header">
+				<h1>Oval</h1>
+			</header>
+			<article data-role="content">
+				<div class="oval"></div>
+				<style>
+					.oval {
+						width: 200px;
+						height: 100px;
+						background: #fc2e5a;
+						-moz-border-radius: 100px / 50px;
+						-webkit-border-radius: 100px / 50px;
+						border-radius: 100px / 50px;
+					}
+				</style>
+				<p><a href="#oval_css" data-transition="pop">Oval CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="oval_css" data-title="Circle">
+			<header data-role="header">
+				<h1>Oval</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.oval {
+	width: 200px;
+	height: 100px;
+	background: #fc2e5a;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+					</code>
+				</pre>
+				<p><a href="#oval" data-transition="pop" data-direction="reverse" data-rel="back">Oval Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="square" data-title="Square">
+			<header data-role="header">
+				<h1>Square</h1>
+			</header>
+			<article data-role="content">
+				<div class="square"></div>
+				<style>
+					.square {
+						width: 100px;
+						height: 100px;
+						background: #fc2e5a;
+					}
+				</style>
+				<p><a href="#square_css" data-transition="pop">Square CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="square_css" data-title="Square">
+			<header data-role="header">
+				<h1>Square</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.square {
+	width: 100px;
+	height: 100px;
+	background: #fc2e5a;
+}
+					</code>
+				</pre>
+				<p><a href="#square" data-transition="pop" data-direction="reverse" data-rel="back">Square Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="triangle" data-title="Triangle">
+			<header data-role="header">
+				<h1>Triangle</h1>
+			</header>
+			<article data-role="content">
+				<div class="triangle"></div>
+				<style>
+					.triangle {
+						width: 0;
+						height: 0;
+						border-left: 50px solid transparent;
+						border-right: 50px solid transparent;
+						border-bottom: 100px solid #fc2e5a;
+					}
+				</style>
+				<p><a href="#triangle_css" data-transition="pop">Triangle CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section><section data-role="page" id="triangle_css" data-title="Triangle">
+			<header data-role="header">
+				<h1>Triangle</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #fc2e5a;
+}
+					</code>
+				</pre>
+				<p><a href="#triangle" data-transition="pop" data-direction="reverse" data-rel="back">Triangle Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="rectangle" data-title="Rectangle">
+			<header data-role="header">
+				<h1>Rectangle</h1>
+			</header>
+			<article data-role="content">
+				<div class="rectangle"></div>
+				<style>
+					.rectangle {
+						width: 200px;
+						height: 100px;
+						background: #fc2e5a;
+					}
+				</style>
+				<p><a href="#rectangle_css" data-transition="pop">Rectangle CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section><section data-role="page" id="rectangle_css" data-title="Rectangle">
+			<header data-role="header">
+				<h1>Rectangle</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.rectangle {
+	width: 200px;
+	height: 100px;
+	background: #fc2e5a;
+}
+					</code>
+				</pre>
+				<p><a href="#rectangle" data-transition="pop" data-direction="reverse" data-rel="back">Rectangle Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="star" data-title="Star">
+			<header data-role="header">
+				<h1>Star</h1>
+			</header>
+			<article data-role="content">
+				<div class="star"></div>
+				<style>
+					.star {
+					   margin: 50px 0;
+					   position: relative;
+					   display: block;
+					   color: #fc2e5a;
+					   width: 0px;
+					   height: 0px;
+					   border-right:  100px solid transparent;
+					   border-bottom: 70px  solid #fc2e5a;
+					   border-left:   100px solid transparent;
+					   -moz-transform:    rotate(35deg);
+					   -webkit-transform: rotate(35deg);
+					   -ms-transform:     rotate(35deg);
+					   -o-transform:      rotate(35deg);
+					}
+					.star:before {
+					   border-bottom: 80px solid #fc2e5a;
+					   border-left: 30px solid transparent;
+					   border-right: 30px solid transparent;
+					   position: absolute;
+					   height: 0;
+					   width: 0;
+					   top: -45px;
+					   left: -65px;
+					   display: block;
+					   content: '';
+					   -webkit-transform: rotate(-35deg);
+					   -moz-transform:    rotate(-35deg);
+					   -ms-transform:     rotate(-35deg);
+					   -o-transform:      rotate(-35deg);
+					   
+					}
+					.star:after {
+					   position: absolute;
+					   display: block;
+					   color: #fc2e5a;
+					   top: 3px;
+					   left: -105px;
+					   width: 0px;
+					   height: 0px;
+					   border-right: 100px solid transparent;
+					   border-bottom: 70px solid #fc2e5a;
+					   border-left: 100px solid transparent;
+					   -webkit-transform: rotate(-70deg);
+					   -moz-transform:    rotate(-70deg);
+					   -ms-transform:     rotate(-70deg);
+					   -o-transform:      rotate(-70deg);
+					   content: '';
+					}
+				</style>
+				<p><a href="#star_css" data-transition="pop">Star CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section><section data-role="page" id="star_css" data-title="star">
+			<header data-role="header">
+				<h1>Star</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.star {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: #fc2e5a;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid #fc2e5a;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+.star:before {
+   border-bottom: 80px solid #fc2e5a;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+   
+}
+.star:after {
+   position: absolute;
+   display: block;
+   color: #fc2e5a;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid #fc2e5a;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+					</code>
+				</pre>
+				<p><a href="#star" data-transition="pop" data-direction="reverse" data-rel="back">Star Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="pentagon" data-title="Pentagon">
+			<header data-role="header">
+				<h1>Pentagon</h1>
+			</header>
+			<article data-role="content">
+				<div class="pentagon"></div>
+				<style>
+					.pentagon {
+							margin: 30px 0 0 0;  /* cosmetic */
+					    position: relative;
+					    width: 54px;
+					    border-width: 50px 18px 0;
+					    border-style: solid;
+					    border-color: #fc2e5a transparent;
+					}
+					.pentagon:before {
+					    content: "";
+					    position: absolute;
+					    height: 0;
+					    width: 0;
+					    top: -85px;
+					    left: -18px;
+					    border-width: 0 45px 35px;
+					    border-style: solid;
+					    border-color: transparent transparent #fc2e5a;
+					}
+				</style>
+				<p><a href="#pentagon_css" data-transition="pop">Pentagon CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section><section data-role="page" id="pentagon_css" data-title="Pentagon">
+			<header data-role="header">
+				<h1>Pentagon</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.pentagon {
+		margin: 30px 0 0 0; /* cosmetic */
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #fc2e5a transparent;
+}
+.pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #fc2e5a;
+}
+					</code>
+				</pre>
+				<p><a href="#pentagon" data-transition="pop" data-direction="reverse" data-rel="back">Pentagon Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="heart" data-title="Heart">
+			<header data-role="header">
+				<h1>Heart</h1>
+			</header>
+			<article data-role="content">
+				<div class="heart"></div>
+				<style>
+					.heart {
+					    position: relative;
+					    width: 100px;
+					    height: 90px;
+					}
+					.heart:before,
+					.heart:after {
+					    position: absolute;
+					    content: "";
+					    left: 50px;
+					    top: 0;
+					    width: 50px;
+					    height: 80px;
+					    background: #fc2e5a;
+					    -moz-border-radius: 50px 50px 0 0;
+					    border-radius: 50px 50px 0 0;
+					    -webkit-transform: rotate(-45deg);
+					       -moz-transform: rotate(-45deg);
+					        -ms-transform: rotate(-45deg);
+					         -o-transform: rotate(-45deg);
+					            transform: rotate(-45deg);
+					    -webkit-transform-origin: 0 100%;
+					       -moz-transform-origin: 0 100%;
+					        -ms-transform-origin: 0 100%;
+					         -o-transform-origin: 0 100%;
+					            transform-origin: 0 100%;
+					}
+					.heart:after {
+					    left: 0;
+					    -webkit-transform: rotate(45deg);
+					       -moz-transform: rotate(45deg);
+					        -ms-transform: rotate(45deg);
+					         -o-transform: rotate(45deg);
+					            transform: rotate(45deg);
+					    -webkit-transform-origin: 100% 100%;
+					       -moz-transform-origin: 100% 100%;
+					        -ms-transform-origin: 100% 100%;
+					         -o-transform-origin: 100% 100%;
+					            transform-origin :100% 100%;
+					}
+				</style>
+				<p><a href="#heart_css" data-transition="pop">Heart CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section><section data-role="page" id="heart_css" data-title="heart">
+			<header data-role="header">
+				<h1>Heart</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #fc2e5a;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+					</code>
+				</pre>
+				<p><a href="#heart" data-transition="pop" data-direction="reverse" data-rel="back">Heart Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+		<section data-role="page" id="infinity" data-title="Infinity">
+			<header data-role="header">
+				<h1>Infinity</h1>
+			</header>
+			<article data-role="content">
+				<div class="infinity"></div>
+				<style>
+					.infinity {
+					    position: relative;
+					    width: 212px;
+					    height: 100px;
+					}
+					
+					.infinity:before,
+					.infinity:after {
+					    content: "";
+					    position: absolute;
+					    top: 0;
+					    left: 0;
+					    width: 60px;
+					    height: 60px;    
+					    border: 20px solid #fc2e5a;
+					    -moz-border-radius: 50px 50px 0 50px;
+					         border-radius: 50px 50px 0 50px;
+					    -webkit-transform: rotate(-45deg);
+					       -moz-transform: rotate(-45deg);
+					        -ms-transform: rotate(-45deg);
+					         -o-transform: rotate(-45deg);
+					            transform: rotate(-45deg);
+					}
+					
+					.infinity:after {
+					    left: auto;
+					    right: 0;
+					    -moz-border-radius: 50px 50px 50px 0;
+					         border-radius: 50px 50px 50px 0;
+					    -webkit-transform:rotate(45deg);
+					       -moz-transform:rotate(45deg);
+					        -ms-transform:rotate(45deg);
+					         -o-transform:rotate(45deg);
+					            transform:rotate(45deg);
+					}
+				</style>
+				<p><a href="#infinity_css" data-transition="pop">Infinity CSS</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section><section data-role="page" id="infinity_css" data-title="Infinity">
+			<header data-role="header">
+				<h1>Infinity</h1>
+			</header>
+			<article data-role="content">	
+				<pre>
+					<code>
+.infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+
+.infinity:before,
+.infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;    
+    border: 20px solid #fc2e5a;
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+.infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform:rotate(45deg);
+       -moz-transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+         -o-transform:rotate(45deg);
+            transform:rotate(45deg);
+}
+					</code>
+				</pre>
+				<p><a href="#infinity" data-transition="pop" data-direction="reverse" data-rel="back">Infinity Shape</a></p>
+			</article>
+			<footer data-role="footer">
+				<h4>BuildMobile: jQuery Mobile</h4>
+			</footer>
+		</section>
+	</body>
+</html>
