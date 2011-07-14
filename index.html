@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="jqm/jquery.mobile-1.0b2pre.min.css" />
 		<script src="jqm/jquery-1.6.1.min.js"></script>
 		<script src="jqm/jquery.mobile-1.0b2pre.min.js"></script>
+		<script src="js/jqm.js"></script>
 	</head>
 	<body>
 		<section data-role="page" id="shapes" data-title="CSS3 Shapes">
@@ -37,7 +38,7 @@
 		<section data-role="page" data-add-back-btn="true" id="circle" data-title="Circle">
 			<header data-role="header" data-position="fixed">
 				<h1>Circle</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="circle"></div>
@@ -51,7 +52,11 @@
 						border-radius: 50px;
 					}
 				</style>
-				<p><a href="#circle_css" data-transition="pop">Circle CSS</a></p>
+				<p><a href="#circle_css" data-role="button" data-transition="pop">Circle CSS</a></p>
+<!--				<nav data-role="controlgroup">
+					<a data-role="button" data-theme="c">Shape</a>
+					<a href="#circle_css" data-role="button" data-theme="c" data-transition="pop">CSS</a>
+				</nav>-->
 			</article>
 			<footer data-role="footer" data-position="fixed" data-id="footer" class="ui-bar">
 				<a href="#about" data-rel="dialog" data-icon="gear" data-transition="pop">About</a>
@@ -60,7 +65,7 @@
 		<section data-role="page" data-add-back-btn="true" id="circle_css" data-title="Circle">
 			<header data-role="header" data-position="fixed">
 				<h1>Circle</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -75,16 +80,23 @@
 }
 					</code>
 				</pre>
-				<p><a href="#circle" data-transition="pop" data-direction="reverse" data-rel="back">Circle Shape</a></p>
+				<p><a href="#circle" data-role="button" data-rel="back">Circle Shape</a></p>
+<!--				<nav data-role="controlgroup">
+					<a href="#circle" data-role="button" data-theme="c" data-transition="pop" data-direction="reverse" data-rel="back">Shape</a>
+					<a data-role="button" data-theme="c">CSS</a>
+				</nav>-->
 			</article>
 			<footer data-role="footer" data-position="fixed" data-id="footer" class="ui-bar">
 				<a href="#about" data-rel="dialog" data-icon="gear" data-transition="pop">About</a>
 			</footer>
 		</section>
+		
+		
+		
 		<section data-role="page" data-add-back-btn="true" id="oval" data-title="Oval">
 			<header data-role="header" data-position="fixed">
 				<h1>Oval</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="oval"></div>
@@ -107,7 +119,7 @@
 		<section data-role="page" data-add-back-btn="true" id="oval_css" data-title="Circle">
 			<header data-role="header" data-position="fixed">
 				<h1>Oval</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -131,7 +143,7 @@
 		<section data-role="page" data-add-back-btn="true" id="square" data-title="Square">
 			<header data-role="header" data-position="fixed">
 				<h1>Square</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="square"></div>
@@ -151,7 +163,7 @@
 		<section data-role="page" data-add-back-btn="true" id="square_css" data-title="Square">
 			<header data-role="header" data-position="fixed">
 				<h1>Square</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -172,7 +184,7 @@
 		<section data-role="page" data-add-back-btn="true" id="triangle" data-title="Triangle">
 			<header data-role="header" data-position="fixed">
 				<h1>Triangle</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="triangle"></div>
@@ -193,7 +205,7 @@
 		</section><section data-role="page" data-add-back-btn="true" id="triangle_css" data-title="Triangle">
 			<header data-role="header" data-position="fixed">
 				<h1>Triangle</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -216,7 +228,7 @@
 		<section data-role="page" data-add-back-btn="true" id="rectangle" data-title="Rectangle">
 			<header data-role="header" data-position="fixed">
 				<h1>Rectangle</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="rectangle"></div>
@@ -235,7 +247,7 @@
 		</section><section data-role="page" data-add-back-btn="true" id="rectangle_css" data-title="Rectangle">
 			<header data-role="header" data-position="fixed">
 				<h1>Rectangle</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -256,7 +268,7 @@
 		<section data-role="page" data-add-back-btn="true" id="star" data-title="Star">
 			<header data-role="header" data-position="fixed">
 				<h1>Star</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="star"></div>
@@ -319,7 +331,7 @@
 		</section><section data-role="page" data-add-back-btn="true" id="star_css" data-title="star">
 			<header data-role="header" data-position="fixed">
 				<h1>Star</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -384,7 +396,7 @@
 		<section data-role="page" data-add-back-btn="true" id="pentagon" data-title="Pentagon">
 			<header data-role="header" data-position="fixed">
 				<h1>Pentagon</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="pentagon"></div>
@@ -417,7 +429,7 @@
 		</section><section data-role="page" data-add-back-btn="true" id="pentagon_css" data-title="Pentagon">
 			<header data-role="header" data-position="fixed">
 				<h1>Pentagon</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -452,7 +464,7 @@
 		<section data-role="page" data-add-back-btn="true" id="heart" data-title="Heart">
 			<header data-role="header" data-position="fixed">
 				<h1>Heart</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="heart"></div>
@@ -506,7 +518,7 @@
 		</section><section data-role="page" data-add-back-btn="true" id="heart_css" data-title="heart">
 			<header data-role="header" data-position="fixed">
 				<h1>Heart</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -562,7 +574,7 @@
 		<section data-role="page" data-add-back-btn="true" id="infinity" data-title="Infinity">
 			<header data-role="header" data-position="fixed">
 				<h1>Infinity</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<div class="infinity"></div>
@@ -611,7 +623,7 @@
 		</section><section data-role="page" data-add-back-btn="true" id="infinity_css" data-title="Infinity">
 			<header data-role="header" data-position="fixed">
 				<h1>Infinity</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">	
 				<pre>
@@ -662,7 +674,7 @@
 		<section data-role="page" data-add-back-btn="true" id="about" data-title="About">
 			<header data-role="header">
 				<h1>About</h1>
-				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-direction="reverse">Home</a>
+				<a href="#shapes" data-icon="home" data-iconpos="notext" class="ui-btn-right" data-rel="back">Home</a>
 			</header>
 			<article data-role="content">
 				<p>About the CSS Shapes App.</p>
